@@ -37,8 +37,8 @@ def main():
     else:
         experiments=experiments+launch_DASMIL_lung(args)
     
-    executor.map_array(processDataset,experiments)
-    # processDataset(experiments[0])
+    # executor.map_array(processDataset,experiments)
+    processDataset(experiments[0])
 
 if __name__ == '__main__':
     main()
