@@ -1,0 +1,27 @@
+submitit ERROR (2024-12-02 16:50:21,601) - Submitted job triggered an exception
+Traceback (most recent call last):
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/submitit/core/_submit.py", line 11, in <module>
+    submitit_main()
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/submitit/core/submission.py", line 71, in submitit_main
+    process_job(args.folder)
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/submitit/core/submission.py", line 64, in process_job
+    raise error
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/submitit/core/submission.py", line 53, in process_job
+    result = delayed.result()
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/submitit/core/utils.py", line 126, in result
+    self._result = self.function(*self.args, **self.kwargs)
+  File "/home/gan4090/dzh/mil4wsi-main/utilsmil4wsi/process.py", line 13, in processDataset
+    train_loader,val_loader,test_loader=get_loaders(args)
+  File "/home/gan4090/dzh/mil4wsi-main/utilsmil4wsi/datasets.py", line 27, in get_loaders
+    graph_val_loader = geom_loader.DataLoader(
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/torch_geometric/loader/dataloader.py", line 78, in __init__
+    super().__init__(
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 344, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/home/gan4090/Desktop/ENTER/envs/wsissl/lib/python3.10/site-packages/torch/utils/data/sampler.py", line 107, in __init__
+    raise ValueError("num_samples should be a positive integer "
+ValueError: num_samples should be a positive integer value, but got num_samples=0

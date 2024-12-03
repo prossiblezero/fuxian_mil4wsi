@@ -1,0 +1,3 @@
+submitit INFO (2024-12-02 16:50:20,666) - Starting with JobEnvironment(job_id=247832, hostname=gan4090, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2024-12-02 16:50:20,666) - Loading pickle: /home/gan4090/dzh/mil4wsi-main/logfolder/247832_submitted.pkl
+submitit ERROR (2024-12-02 16:50:21,601) - Submitted job triggered an exception
